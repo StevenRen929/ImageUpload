@@ -52,7 +52,9 @@ export default function ImageUpload() {
 
   return (
 
+    <div className='container mt-4'>
   <Fragment>
+  <h4 className='display-4 text-center mb-4'>Image Upload</h4>
   <form onSubmit={handleSubmit}>
         {message && <Message message = {message} setMessage={setMessage}/>}
       <div className='input-group mb-3'>
@@ -79,6 +81,7 @@ export default function ImageUpload() {
   )
 }
 </Fragment>
+</div>
   )
 }
 
